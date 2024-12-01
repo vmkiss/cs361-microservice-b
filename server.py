@@ -39,6 +39,12 @@ while True:
                         output = format_string(song)
                         result += output
 
+            if data_type == 'artist':
+                for song in song_data:
+                    if song[2] == keyword:
+                        output = format_string(song)
+                        result += output
+
             if not result:
                 result += "No songs found"
 
